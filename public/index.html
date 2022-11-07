@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SCS</title>
 
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
@@ -13,79 +13,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <script src="js_main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-5 text-center p-2" id="info_div"
-                style="background-image: url(images/white-shirt-g67eb2df39_1920.png);">
+
+            <div id="load_div" style="background-image:url(images/2.jpg); display: none;"></div>
+
+            <div data-aos="zoom-in" class="col-sm-12 col-md-6 text-center p-4" id="pic_div"
+                style="min-height: 100vh; background-image: url(images/1.jpg); background-size: cover; transition: 3s;">
+
+                <div class="row">
+
+                    <div data-aos="fade-down" data-aos-offset="" data-aos-duration="1000"
+                        class="col-12 text-center w-50 shadow-lg p-3 m-5 rounded-5 bg-black bg-opacity-50" id="id_title">
+                        <h1 class=""
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 300%; font-weight: 900; color: rgb(255, 255, 238);">
+                            Swiss Cleaning Service</h1>
+                    </div>
+
+                    <div data-aos="fade-down" data-aos-duration="3000"
+                        class="col-12 text-bg-light shadow-lg bg-opacity-75" id="id_slogan">
+                        <h3 class="text-dark"
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 120%; font-weight: 500;">
+                            We are on time like a Swiss watch<br>fast like a Swiss train <br>this makes <span
+                                style="font-size: 70%;">money</span> laundering our domain
+                        </h3>
+                    </div>
+
+                    <div id="btn_div" class="col-12" style="position: absolute; bottom: 0;">
+                        <button class="m-3 btn rounded-5 bg-light shadow-lg bg-opacity-75"
+                            style="padding:2.5%; width: max-content; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: rgb(0, 0, 0); font-size: larger; font-weight: 600;"
+                            id="btn_show">v<br>What we offer</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-6 text-center p-2" id="info_div"
+                style="background-image: url(images/polo-shirt-gfd40ddf4f_1920.png);">
 
                 <div class="row p-3">
-                    <div class="col-12 p-5 m-2 bg-light bg-opacity-75 rounded-3 m-3" style="">
+
+                    <div class="col-12 p-4 m-3 bg-light rounded-3 m-3">
                         <h1
                             style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600; font-size: 250%; height: max-content; width:max-content;">
                             The Service</h1>
                     </div>
-                    <div class="col-md-4" id="help_div">
-                    </div>
-                    <div class="col-md-8 col-sm-12" id="id_list">
-                        <ul class="p-3 m-2">
+
+                    <div class="col-md-8 col-sm-12 m-2" id="id_list">
+                        <ul class="p-3 m-2"
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
-                                class="p-3 float-start">- Button Down Shirts
-                                - 15 ₪ / pc </li>
+                                class="p-3 float-start">Button Down Shirts
+                                - 15 ₪</li>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
-                                class="p-3 float-start">- Pants - 10 ₪ / pc
+                                class="p-3 float-start">Pants - 10 ₪
                             </li>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
-                                class="p-3 float-start">- Shirts - 8 ₪ / pc
+                                class="p-3 float-start">Shirts - 8 ₪
                             </li>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
-                                class="p-3 float-start">- Everything else <br>on request
+                                class="p-3 float-start">Everything else <br>on request
                             </li>
                             <br><br>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
-                                class="p-3 float-start">- Delivery - 30 ₪
-                            </li> <br><br>
+                                class="p-3 float-start">Delivery - 30 ₪
+                            </li>
+                            <br><br>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
-                                class="p-3 float-start">- House Cleaning - 50
+                                class="p-3 float-start">House Cleaning - 50
                                 ₪ / hour</li>
                             <br><br>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 150%; font-weight: 500;"
                                 class="p-3 float-start">Delivery includes pick-up and drop-off</li>
                             <br><br>
                             <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 180%; font-weight: 600;"
-                                class="p-3 float-start">Contact us until 3pm to receive your beloved clothes the next
+                                class="p-5">Contact us until 3pm to receive your beloved clothes the next
                                 day!</li>
-
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7 text-center p-4" id="pic_div"
-                style="min-height: 100vh; background-image: url(/images/alp.jpg); background-size: cover;">
 
-                <button class="btn border border-2 bg-light shadow-lg"
-                    style="color: rgba(0, 0, 0, 0.584); font-size: larger; font-weight: 600;" id="btn_show">v<br> See
-                    More</button>
 
-                <div class=" p-4 text-center w-50 text-bg-white shadow-lg p-3 mt-5 m-4 rounded-4" id="id_title">
-                    <h1 class="" style="font-size: 300%; font-weight: 600;">Swiss Cleaning Service</h1>
-                </div>
-                <div class="text-bg-secondary w-50 shadow-lg rounded-4 bg-opacity-75 p-3 mt-md-5"
-                    style="margin-top: 10%; margin-left: 10%;" id="id_slogan">
-                    <h3 class="text-light"
-                        style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 180%;">
-                        "On time like a Swiss watch <br>Fast like a Swiss
-                        train <br><span style="font-size: 70%; color: rgb(255, 255, 255);">money</span> laundering is
-                        our domain."</Pre>
-                    </h3>
-                </div>
-            </div>
         </div>
     </div>
+    <script>AOS.init()</script>
 </body>
 
 </html>

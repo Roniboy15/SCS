@@ -17,17 +17,23 @@ li {
     display: none;
 }
 #id_slogan {
-    min-width: 60%;
+    padding: 2%;
+    margin-top: 15%;
+    margin-left: 15%;
+    max-width: max-content;
+    font-size: 140%;
+    border-radius: 20px;
 }
+
 #id_list {
-    margin-top: 40vh;
+    margin-top: 15vh;
 }
 
 #info_div {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(128, 128, 128, 0.277);
     background-size: cover;
-    background-position-x: left;
+    background-position-x: right;
 }
 
 
@@ -38,26 +44,38 @@ li {
     }
 
     #info_div {
+        transition: 2s;
         display: none;
-        max-height: 70vh;
+        max-height: 75vh;
         overflow-y: scroll;
         overflow-x: hidden;
         background-position-x: left;
-    } 
+        background-size: 180%;
+    }
 
     #id_title {
         min-width: min-content;
     }
     #id_slogan {
         min-width: 95%;
+        margin-top: 50%;
+        font-size: 110%;
+        margin-left: 0%;
+
     }
 
     #btn_show {
         display: initial;
     }
     #id_list {
-        margin-top: 3vh;
-        margin-left: 16vw;
     }
 }
+
+@media only screen and (max-height: 740px){
+
+    #id_slogan {
+        margin-top: 20%;
+    }
+}
+
 
