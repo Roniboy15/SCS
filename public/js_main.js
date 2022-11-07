@@ -50,20 +50,27 @@ const Carousel = () => {
 
     let bg = document.querySelector("#pic_div");
     let bg2 = document.querySelector("#load_div");
-    let counter = 1;
-    let counter2 = 2;
+    let counter = 2;
+    let counter2 = 1;
+
+    setInterval(()=> {
+        counter++;
+        bg.style.backgroundImage = 'url(images/' + counter + '.jpg)';
+        if (counter == 5) counter = 1;
+
+    }, 7000);
 
     setInterval(() => {
 
-        counter++;
         counter2++;
+        //counter2++;
 
-        bg.style.backgroundImage = 'url(images/' + counter + '.jpg)';
         bg2.style.backgroundImage = 'url(images/' + counter2 + '.jpg)';
+        //bg2.style.backgroundImage = 'url(images/' + counter2 + '.jpg)';
 
-        if (counter == 5) counter = 1;
         if (counter2 == 5) counter2 = 1;
-    }, 7000)
+       // if (counter2 == 5) counter2 = 1;
+    }, 7000);
 }
 
 init();

@@ -1,26 +1,35 @@
 #id_title {
     background-color: rgba(255, 255, 255, 0.712);
+    width: min-content;
+    min-width: 80%;
+    margin: 10%;
 }
 
-ul{
+#h1_title {
+    font-size: xxx-large;
+}
+
+ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    }
+}
 
 li {
     list-style: none;
 
 }
+
 #btn_show {
     display: none;
 }
+
 #id_slogan {
-    padding: 2%;
-    margin-top: 15%;
-    margin-left: 15%;
-    max-width: max-content;
+    margin-top: 5%;
+    margin-left: 25%;
+    max-width: min-content;
+    min-width: 70%;
     font-size: 140%;
     border-radius: 20px;
 }
@@ -37,45 +46,48 @@ li {
 }
 
 
-@media only screen and (max-width: 768px){
 
-    li{
-        float: inline-start;
+@media only screen and (max-width: 768px) {
+
+    #id_title {
+        width: max-content;
+        max-width: min-content;
+        margin: 15%;
+    }
+
+    #h1_title {
+        font-size: 250%;
     }
 
     #info_div {
         transition: 2s;
         display: none;
-        max-height: 75vh;
+        max-height: 70vh;
         overflow-y: scroll;
         overflow-x: hidden;
         background-position-x: left;
-        background-size: 180%;
+        background-size: 190%;
     }
 
-    #id_title {
-        min-width: min-content;
-    }
+
     #id_slogan {
-        min-width: 95%;
         margin-top: 50%;
-        font-size: 110%;
-        margin-left: 0%;
+        margin-left: 10%;
+        padding: 3%;
+        min-width: 80%;
 
     }
 
     #btn_show {
         display: initial;
     }
-    #id_list {
-    }
+
+    #id_list {}
 }
 
-@media only screen and (max-height: 740px){
+@media only screen and (max-height: 740px) {
 
     #id_slogan {
-        margin-top: 20%;
+        margin-top: 15%;
     }
 }
-
-
