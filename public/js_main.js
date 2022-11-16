@@ -1,8 +1,8 @@
-
 const init = () => {
     ShowInfo();
     //CheckWhereBtn();
     Carousel();
+    answerSubmit();
 }
 
 const ShowInfo = () => {
@@ -53,12 +53,12 @@ const Carousel = () => {
     let counter = 2;
     let counter2 = 1;
 
-    setInterval(()=> {
+    setInterval(() => {
         counter++;
         bg.style.backgroundImage = 'url(images/' + counter + '.jpg)';
         if (counter == 5) counter = 1;
 
-    }, 7000);
+    }, 9000);
 
     setInterval(() => {
 
@@ -69,8 +69,22 @@ const Carousel = () => {
         //bg2.style.backgroundImage = 'url(images/' + counter2 + '.jpg)';
 
         if (counter2 == 5) counter2 = 1;
-       // if (counter2 == 5) counter2 = 1;
-    }, 7000);
+        // if (counter2 == 5) counter2 = 1;
+    }, 6000);
+}
+
+const answerSubmit = () => {
+    document.querySelector("#submit").addEventListener("click", () => {
+        let box = document.createElement("div");
+
+        box.style.height = "50vh";
+        box.style.width = "50vw";
+
+        document.body.append(box);
+        box.innerHTML = `<h2>Hallo Welt</h2>`
+
+        
+    })
 }
 
 init();

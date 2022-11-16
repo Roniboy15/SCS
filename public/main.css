@@ -43,6 +43,7 @@ li {
     background-color: rgba(128, 128, 128, 0.277);
     background-size: cover;
     background-position-x: right;
+    max-height: 100vh;
 }
 
 

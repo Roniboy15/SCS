@@ -26,11 +26,11 @@
         <div class="row">
 
             <div data-aos="zoom-in" class="col-sm-12 col-md-6 text-center" id="pic_div"
-                style="max-height: 100vh; background-image: url(images/1.jpg); background-size: cover; transition: 3s;">
+                style="max-height: 100vh; background-image: url(images/1.jpg); background-size: cover; transition: 0s;">
                 <div class="row justify-content-center">
 
                     <div id="load_div"
-                        style="min-height: 100vh;  background-image: url(images/1.jpg); background-size: cover; transition: 3s;">
+                        style="min-height: 100vh;  background-image: url(images/1.jpg); background-size: cover; transition: 4s;">
 
                         <div class="row">
 
@@ -89,6 +89,23 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-12 text-center p-2 h-100" id="order_div">
+                <form method="post" action="/" class="p-3">
+                    <label for="">Create your order</label><br>
+                    <span>First Name</span><input type="text" name="name"><br>
+                    <span>Last Name</span><input type="text" name="surname"><br>
+                    <span>Phone number</span><input type="number" name="phone"><br>
+                    <span>Address</span><input type="text" name="location.street"><br>
+                    <span>Specific</span><input type="text" name="location.specific"><br>
+                    <span>Clothes</span><br>
+                    <input type="clothes.number" name="buttonShirts" placeholder="btn-shirts">
+                    <input type="number" name="clothes.pants" placeholder="pants">
+                    <input type="number" name="clothes.shirts" placeholder="shirts">
+                    <input type="text" name="clothes.other" placeholder="other">
+                    <button id="submit" type="submit">Submit</button>
+                </form>
             </div>
 
 
