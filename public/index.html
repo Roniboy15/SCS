@@ -19,6 +19,16 @@
     <script src="js_main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -35,8 +45,7 @@
                         <div class="row">
 
                             <div data-aos="fade-down" data-aos-offset="" data-aos-duration="1000"
-                                class="col-12 text-center shadow-lg p-3 rounded-5 bg-black bg-opacity-50"
-                                id="id_title" >
+                                class="col-12 text-center shadow-lg p-3 rounded-5 bg-black bg-opacity-50" id="id_title">
                                 <h1 id="h1_title" class="p-1"
                                     style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 800; color: rgb(255, 255, 238); ">
                                     Swiss Cleaning Service</h1>
@@ -77,22 +86,23 @@
 
                         <ul class="p-3 m-2"
                             style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: x-large; font-weight: 400;">
-                            
+
                             <li class="p-3">Button Shirts 15₪</li>
                             <li class="p-3">Pants 10₪</li>
                             <li class="p-3">Shirts 8₪</li>
                             <li class="p-3">Everything else <br> on request</li>
                             <br>
                             <li class="p-3">Delivery 25₪</li>
-                            <br><br>
-                            <li class="p-4" style="font-weight: 800;">Contact us until 3pm to receive your beloved clothes the next day!</li>
+                            <br>
+                            <li class="p-4" style="font-weight: 800;">Contact us until 3pm to receive your beloved
+                                clothes the next day!</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 text-center p-2 h-100" id="order_div">
-                <form method="post" action="/" class="p-3">
+            <div class="col-md-6 col-sm-12 text-center" id="order_div">
+                <form method="post" action="/" class="">
                     <label for="">Create your order</label><br>
                     <span>First Name</span><input type="text" name="name"><br>
                     <span>Last Name</span><input type="text" name="surname"><br>
@@ -106,6 +116,33 @@
                     <input type="text" name="clothes.other" placeholder="other">
                     <button id="submit" type="submit">Submit</button>
                 </form>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div id="carouselExampleControls" class="carousel slide w-100 p-0" data-ride="carousel">
+                    <div class="carousel-inner p-0 w-100">
+                        <div class="carousel-item active w-100" style="transition: 2s;">
+                            <div id="car1">
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="transition: 2s;">
+                            <div id="car2">
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="transition: 2s;">
+                            <div id="car3">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
 
 

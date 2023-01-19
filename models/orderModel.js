@@ -29,10 +29,10 @@ exports.validateOrder = (reqBody) => {
         specific: Joi.string().min(2).max(50).required(),
       },
       clothes: {
-        buttonShirts: Joi.number().max(20).required(),
-        pants: Joi.number().max(20).required(),
-        shirts: Joi.number().max(30).required(),
-        other: Joi.string().max(50).required()
+        buttonShirts: Joi.number().max(20).alllow(null,""),
+        pants: Joi.number().max(20).alllow(null,""),
+        shirts: Joi.number().max(30).alllow(null,""),
+        other: Joi.string().max(50).alllow(null,"")
     }
     })
     return joiSchema.validate(reqBody);

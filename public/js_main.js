@@ -74,7 +74,8 @@ const Carousel = () => {
 }
 
 const answerSubmit = () => {
-    document.querySelector("#submit").addEventListener("click", () => {
+    document.querySelector("#submit").addEventListener("submit", () => {
+        alert("successfully submitted!")
         let box = document.createElement("div");
 
         box.style.height = "50vh";

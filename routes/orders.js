@@ -5,7 +5,6 @@ const router = express.Router();
 router.get("/", async (req,res) => {
 
     try {
-
         let data = await Ordermodel.find({});
         res.json(data);
     }
@@ -18,8 +17,7 @@ router.get("/", async (req,res) => {
 router.post("/", async (req,res) => {
     let validBody = validateOrder(req.body);
 
-    if(!validBody) {
-        console.log("err")
+    if(validBody.error) {
         return res.status(400).json(validBody.error.details);
     }
 
@@ -36,5 +34,7 @@ router.post("/", async (req,res) => {
         res.status(500).json(err);
       }
 })
+
+
 
 module.exports = router;

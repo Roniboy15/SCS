@@ -35,7 +35,7 @@ li {
 }
 
 #id_list {
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 #info_div {
@@ -45,6 +45,33 @@ li {
     background-position-x: right;
     max-height: 100vh;
 }
+
+#car1 {
+    height: 50vh;
+    background-image: url(./images/1.jpg);
+    background-size: cover;
+
+}
+
+#car2 {
+    height: 50vh;
+    background-image: url(./images/2.jpg);
+    background-size: cover;
+
+}
+
+#car3 {
+    height: 50vh;
+    background-image: url(./images/3.jpg);
+    background-size: cover;
+
+}
+
+#carouselExampleControls {
+    width: 100vw;
+
+}
+
 
 
 
