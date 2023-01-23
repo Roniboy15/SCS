@@ -10,15 +10,16 @@ import { TOKEN_KEY, USER_INFO } from '../../../constant/constant'
 import { useEffect } from 'react'
 import Modal from '../../../shared/components/modal'
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/'},
+  { name: 'Order', href: '/order' }
 ]
 const menu = [
   { name: 'Login', href: '/login' },
-  { name: 'SignUp', href: '/signUp' },
+  { name: 'SignUp', href: '/signUp' }
 ]
 const menuProfile = [
   { name: 'ToDo List', href: '/todo' },
-  { name: 'Logout', href: '/logout' },
+  { name: 'Logout', href: '/logout' }
 ]
 
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage2 from '../images/night.jpg';
-import backgroundImage1 from '../images/day.jpg';
+import backgroundImage1 from '../images/night.jpg';
 
 const Home = () => {
   const [backgroundImage, setBackgroundImage] = useState(backgroundImage1);

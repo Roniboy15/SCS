@@ -1,6 +1,6 @@
 const express = require("express");
 const { auth } = require("../middlewares/auth");
-const { Order, validateOrder } = require("../models/orderModel");
+const { Order, validateOrder, OrderModel } = require("../models/orderModel");
 const router = express.Router();
 
 // Get all orders
@@ -17,23 +17,21 @@ router.get('/:id', async (req, res) => {
 });
 
 // Create a new order
-router.post('/', auth, async (req, res) => {
-    const { error } = validateOrder(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
+router.post('/', async (req, res) => {
+    let validBody = validateOrder(req.body);
+    if (validBody.error) return res.status(400).json(validBody.error.details);
 
-    let order = new Order({
-        customerName: req.body.customerName,
-        customerPhone: req.body.customerPhone,
-        customerAddress: req.body.customerAddress,
-        orderItems: req.body.orderItems,
-        orderTotal: req.body.orderTotal,
-        orderStatus: req.body.orderStatus,
-        user_id: req.tokenData._id
-    });
+    try {
+        let order = new OrderModel(req.body)
+        await order.save();
+    }
+    catch (err) {
+        console.log(err);
+        res.json(err.details)
+    }
 
-    order = await order.save();
-    res.send(order);
 });
+
 
 // Update an existing order by ID
 router.put('/:id', async (req, res) => {

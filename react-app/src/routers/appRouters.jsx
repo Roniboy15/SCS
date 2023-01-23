@@ -2,9 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LayoutAdmin from '../layout/layoutAdmin/layoutAdmin';
 import Layout from '../layout/layoutUser/layout';
-import Login from '../components/pages/login';
 import Home from '../components/home';
-import Order from '../components/pages/login';
+import Order from '../components/pages/order';
 
 
 const AppRouters = () => {

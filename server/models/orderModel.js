@@ -22,7 +22,7 @@ const OrderSchema = new mongoose.Schema({
         maxlength: 200
     },
     orderItems: {
-        type: Array,
+        type: String,
         required: true
     },
     orderTotal: {
@@ -34,16 +34,14 @@ const OrderSchema = new mongoose.Schema({
         required: true,
         default: 'pending'
     },
-    user_id: {
-        type: String
-    },
+    
     created_at: {
         type: Date,
         default: (new Date(Date.now() + 2 * 60 * 60 * 1000))
     }
 });
 
-exports.Order = mongoose.model("orders", OrderSchema);
+exports.OrderModel = mongoose.model("orders", OrderSchema);
 
 exports.validateOrder = (reqBody) => {
     
@@ -51,7 +49,7 @@ exports.validateOrder = (reqBody) => {
         customerName: Joi.string().min(3).max(50).required(),
         customerPhone: Joi.string().min(10).max(15).required(),
         customerAddress: Joi.string().min(10).max(200).required(),
-        orderItems: Joi.array().required(),
+        orderItems: Joi.string().required(),
         orderTotal: Joi.number().required(),
         orderStatus: Joi.string().valid('pending', 'in progress', 'completed')
     });
